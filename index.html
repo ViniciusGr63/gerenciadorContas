@@ -1,0 +1,98 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas Bancárias</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="grafico.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  </script>
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Contas Bancárias</h1>
+    </header>
+
+    <div id="MENU">
+       <h1>Operações</h1>
+        <label for="contaIndex">Índice da Conta:</label>
+        <input type="number" id="numeroConta" required>
+        <br>
+
+        <label for="operacao">Operação:</label>
+        <select id="operacao" required>
+            <option value="sacar">Sacar</option>
+            <option value="depositar">Depositar</option>
+            <option value="extrato">Ver Extrato</option>
+        </select>
+        <br>
+
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" required>
+        <br>
+
+        <button type="button" onclick="sacarDepositarExtrato()">Executar Operação</button>
+        <button type="button" onclick="limparContas()">Limpar Contas Exibidas</button>
+    </div>
+
+    <div class="container">
+        <h1>Contas Bancárias</h1>
+        <form>
+            <label for="agencia">Agência:</label>
+            <input type="text" id="agencia" required>
+            <br>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" required>
+            <br>
+
+            <label for="tipoConta">Tipo de Conta:</label>
+            <select id="tipoConta" required>
+                <option value="ContaCorrente">Conta Corrente</option>
+                <option value="ContaPoupanca">Conta Poupança</option>
+                <option value="ContaUniversitaria">Conta Universitária</option>
+            </select>
+            <br>
+
+            <label for="saldo">Saldo:</label>
+            <input type="number" id="saldo" required>
+            <br>
+
+            <label for="cartaoCredito" id="cartaoCreditoLabel" style="display:none;">Cartão de Crédito:</label>
+            <input type="number" id="cartaoCredito" style="display:none;">
+            <br>
+
+            <button type="button" onclick="inserirConta()">Inserir Conta</button>
+        </form>
+        <br>
+        <button type="button" onclick="visualizarContas()">Visualizar Contas</button>
+        <button type="button" onclick="limparContas()">Limpar Contas Exibidas</button>
+
+        <div id="listaContas"></div>
+
+        <div id="saldoConta"></div>
+    </div>
+
+  <div class="dados" >
+    <h1>Gerar gráficos</h1>
+  </div>>
+  <div >
+      
+      <input type="file" id="fileInput">
+      <button type="button" onclick="gerarGrafico()">Gerar Gráfico</button>
+      <div>
+          <canvas id="myChart" width="400" height="200"></canvas>
+      </div>
+  </div>
+
+    <footer>
+        <h1> <> </h1>
+    </footer>
+
+</body>
+</html>

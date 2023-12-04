@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;400;600&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Smooch Sans', 'sans-serif';
+ 
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+}
+#menu{
+  margin: 20px;
+  padding: 100px;
+  text-align: left;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 500px;
+  display: inline-block;
+  
+}
+.container{
+  margin: 20px;
+  padding: 100px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 500px;
+  display: inline-block;
+
+}
+.dados{
+
+  padding: 30px;
+   background-color: #90c8f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 50px;
+  
+}
+
+/* Header  */
+header {
+  background-color: #90c8f9;
+    height: 300px;
+}
+
+/* Footer  */
+footer {
+  background-color: #90c8f9;
+    height: 300px;
+}
+
+
+
+
+
+/* Button  */
+button {
+    background-color: #c8dae9;
+    border-radius: 20px; /* Contorno */
+    padding: 10px; /* Espaço entre o conteúdo e o contorno */
+    margin: 10px 0; /* Adiciona espaço acima e abaixo do botão */
+  
+    cursor: pointer; /* Adiciona um cursor indicando que é clicável */
+}
+
+
+
+
+/* form */
+form {
+    max-width: 400px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+button:hover {
+    border: 2px solid #3498db;
+}
